@@ -1,0 +1,28 @@
+1.- Gráfico de dispersión con línea de regresión (regplot):
+Este gráfico muestra la relación entre dos variables: BMI y Charges. Se muestra una línea de regresión roja ajustada a esos puntos. La línea de regresión muestra cómo la variable Charges cambia en función de BMI. Este tipo de gráfico es útil para ver si hay una correlación lineal entre las dos variables.
+
+2.- Gráfico de cajas (boxplot):
+El boxplot muestra la distribución de los valores de Charges para dos grupos: fumadores y no fumadores. Vemos muchos valores atípicos en los NO fumadores, por lo que esos gastos médicos posiblemente se pueda deber a otras causas.
+
+# Regresiones:
+La regresión simple muestra que ser fumador está relacionado con el 62.27% de la variabilidad en los gastos médicos. 
+Esto indica que ser fumador es un predictor bastante fuerte de los gastos médicos en el conjunto de datos.
+
+El modelo de regresión múltiple explica el 75.06% de la variabilidad en los gastos médicos. 
+Esto sugiere que, cuando se consideran todas las variables, hay una mejor capacidad predictiva para estimar los gastos médicos.
+
+Cuando se eliminan los fumadores de las variables predictoras, el modelo de regresión múltiple solo explica el 12.45% de la variabilidad en los gastos médicos. 
+Esto muestra cuán relevante es la variable "Smoker" en la predicción de los gastos médicos.
+
+La regresión de Ridge, que introduce una penalización para evitar el sobreajuste, muestra un R² de 0.1245, lo que indica que el modelo no es capaz de predecir eficazmente los gastos médicos. Esto puede deberse a que no todos los predictores son relevantes o bien la regularización está demasiado fuerte.
+
+La transformación polinómica de grado 2 también muestra un R² de 0.1347, lo que implica que el modelo aún tiene una capacidad limitada para predecir los gastos médicos incluso después de aplicar una transformación polinómica. A pesar de mejorar un poco la predicción, los resultados siguen siendo bajos.
+
+# Conclusiones Generales:
+Ser fumador es un predictor clave: El análisis muestra que ser fumador es un factor importante para predecir los gastos médicos, ya que explica un 62.27% de la variabilidad en los gastos en la regresión simple. Además, al agregar más características, este factor mantiene su relevancia, ya que el modelo con todas las características logra explicar un 75.06% de la variabilidad.
+
+El modelo de regresión múltiple es más efectivo: Cuando se incluyen más características, como la edad, el género, el índice de masa corporal (BMI) y otros factores, el modelo de regresión múltiple mejora significativamente la capacidad predictiva.
+
+La eliminación de "Smoker" disminuye el rendimiento: Al eliminar la variable "Smoker" del modelo, la capacidad predictiva cae drásticamente, lo que subraya la importancia de este factor en los gastos médicos.
+
+Modelos de regularización y transformación polinómica no mejoran significativamente: Los modelos de Ridge y la transformación polinómica no aportan una mejora significativa en la capacidad de predicción, lo que sugiere que el problema puede estar relacionado con la calidad o relevancia de las variables, más que con el modelo en sí.
