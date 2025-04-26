@@ -1,10 +1,13 @@
-1.- Gráfico de dispersión con línea de regresión (regplot):
+**1.- Gráfico de dispersión con línea de regresión (regplot):**
 Este gráfico muestra la relación entre dos variables: BMI y Charges. Se muestra una línea de regresión roja ajustada a esos puntos. La línea de regresión muestra cómo la variable Charges cambia en función de BMI. Este tipo de gráfico es útil para ver si hay una correlación lineal entre las dos variables.
 
-2.- Gráfico de cajas (boxplot):
+**2.- Gráfico de cajas (boxplot):**
 El boxplot muestra la distribución de los valores de Charges para dos grupos: fumadores y no fumadores. Vemos muchos valores atípicos en los NO fumadores, por lo que esos gastos médicos posiblemente se pueda deber a otras causas.
 
-# Regresiones:
+**3.- Correlaciones**
+Explica que tan relacionadas están las variables entre sí. Se observa que la variable Charges está muy relacionada con Smoker (lo cual corrobora ciertos resultados), con Age y con BMI.
+
+**# Regresiones:**
 La regresión simple muestra que ser fumador está relacionado con el 62.27% de la variabilidad en los gastos médicos. 
 Esto indica que ser fumador es un predictor bastante fuerte de los gastos médicos en el conjunto de datos.
 
@@ -18,7 +21,7 @@ La regresión de Ridge, que introduce una penalización para evitar el sobreajus
 
 La transformación polinómica de grado 2 también muestra un R² de 0.1347, lo que implica que el modelo aún tiene una capacidad limitada para predecir los gastos médicos incluso después de aplicar una transformación polinómica. A pesar de mejorar un poco la predicción, los resultados siguen siendo bajos.
 
-# Conclusiones Generales:
+**# Conclusiones Generales:**
 Ser fumador es un predictor clave: El análisis muestra que ser fumador es un factor importante para predecir los gastos médicos, ya que explica un 62.27% de la variabilidad en los gastos en la regresión simple. Además, al agregar más características, este factor mantiene su relevancia, ya que el modelo con todas las características logra explicar un 75.06% de la variabilidad.
 
 El modelo de regresión múltiple es más efectivo: Cuando se incluyen más características, como la edad, el género, el índice de masa corporal (BMI) y otros factores, el modelo de regresión múltiple mejora significativamente la capacidad predictiva.
