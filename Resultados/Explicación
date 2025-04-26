@@ -8,7 +8,7 @@ El boxplot muestra la distribución de los valores de Charges para dos grupos: f
 Explica que tan relacionadas están las variables entre sí. Se observa que la variable Charges está muy relacionada con Smoker (lo cual corrobora ciertos resultados), con Age y con BMI.
 
 **# Regresiones:**
-La regresión simple muestra que ser fumador está relacionado con el **62.27%** de la variabilidad en los gastos médicos. 
+La regresión simple muestra que ser fumador está relacionado con el 62.27% de la variabilidad en los gastos médicos. 
 Esto indica que ser fumador es un predictor bastante fuerte de los gastos médicos en el conjunto de datos.
 
 El modelo de regresión múltiple explica el 75.06% de la variabilidad en los gastos médicos. 
